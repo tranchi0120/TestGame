@@ -52,7 +52,6 @@ body {
 .number-circle:hover {
   background-color: #212421;
   color: white
-    /* Màu nền khi hover */
 }
 
 .number-circle.clicked {
@@ -66,9 +65,8 @@ body {
 
 .noti {
   position: absolute;
-  /* top: 60%; */
   z-index: 1111;
-  bottom: 100px;
+  bottom: 20%;
 }
 
 
@@ -132,16 +130,51 @@ button {
 
 input[type=number] {
   -moz-appearance: textfield;
-  /* Firefox */
   appearance: none;
-  /* All other browsers */
 }
 
-/* Optional: Customize the arrow buttons in webkit browsers (Chrome, Safari, etc.) */
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
-  /* Chrome, Safari, Edge */
   margin: 0;
-  /* Prevent extra margin */
+}
+
+@media screen and (min-width: 1024px) {}
+
+
+@media screen and (max-width: 1023px) and (min-width: 740px) {
+  .noti {
+    position: absolute;
+    z-index: 1111;
+    bottom: 15% !important;
+  }
+
+
+}
+
+@media screen and (max-width: 739px) {
+  .noti {
+    position: absolute;
+    z-index: 1111;
+    bottom: 6% !important;
+  }
+
+  .formGroup {
+    width: 350px;
+  }
+}
+
+
+
+@media only screen and (max-width: 420px) {
+  .noti {
+    position: absolute;
+    z-index: 1111;
+    bottom: 100%;
+    top: 0%;
+  }
+
+  .formGroup {
+    width: 300px;
+  }
 }
