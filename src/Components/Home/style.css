@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+  font-family: "Poppins", system-ui;
+}
+
+.App {
+  text-align: center;
+  background-size: cover;
+  background-image: url(../../assets/bg.png);
+  color: #ffffff;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.number-container {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .35);
+  margin: 0 auto;
+}
+
+.formGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.number-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid black;
+  color: rgb(19, 18, 18);
+  font-size: 14px;
+  cursor: pointer;
+  background-color: rgb(230, 222, 222);
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.number-circle:hover {
+  background-color: #212421;
+  color: white
+    /* Màu nền khi hover */
+}
+
+.number-circle.clicked {
+  background-color: rgb(10, 177, 21);
+}
+
+
+.form {
+  position: relative;
+}
+
+.noti {
+  position: absolute;
+  /* top: 60%; */
+  z-index: 1111;
+  bottom: 100px;
+}
+
+
+
+.formGroup {
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .35);
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  width: 300px;
+  padding: 14px 10px;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+}
+
+input::placeholder {
+  font-weight: 300;
+  opacity: 0.5;
+  color: white;
+  font-size: 14px;
+}
+
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 60px;
+  background-color: rgb(59 130 246);
+  font-weight: 600;
+  font-family: "Poppins", system-ui;
+}
+
+.error {
+  position: absolute;
+  color: red;
+  margin-top: 10px;
+  bottom: -45px;
+}
+
+.point {
+  margin-top: 40px;
+}
+
+.time {
+  margin-top: -15px;
+}
+
+
+input[type=number] {
+  -moz-appearance: textfield;
+  /* Firefox */
+  appearance: none;
+  /* All other browsers */
+}
+
+/* Optional: Customize the arrow buttons in webkit browsers (Chrome, Safari, etc.) */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  /* Chrome, Safari, Edge */
+  margin: 0;
+  /* Prevent extra margin */
+}
