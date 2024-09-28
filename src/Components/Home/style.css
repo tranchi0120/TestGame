@@ -66,7 +66,7 @@ body {
 .noti {
   position: absolute;
   z-index: 1111;
-  bottom: 20%;
+  top: 10%;
 }
 
 
@@ -142,22 +142,26 @@ input[type=number]::-webkit-outer-spin-button {
 @media screen and (min-width: 1024px) {}
 
 
-@media screen and (max-width: 1023px) and (min-width: 740px) {
+@media only screen and (min-width: 1024px) and (max-width: 1336px) {
   .noti {
-    position: absolute;
-    z-index: 1111;
-    bottom: 15% !important;
+    top: 20%;
   }
-
-
 }
 
-@media screen and (max-width: 739px) {
+@media screen and (min-width: 1920px) {
   .noti {
     position: absolute;
     z-index: 1111;
-    bottom: 6% !important;
+    top: 20%;
   }
+}
+
+
+@media screen and (max-width: 739px) {
+  /* .noti {
+    
+    bottom: 6% !important;
+  } */
 
   .formGroup {
     width: 350px;
@@ -167,12 +171,12 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 @media only screen and (max-width: 420px) {
-  .noti {
+  /* .noti {
     position: absolute;
     z-index: 1111;
     bottom: 100%;
     top: 0%;
-  }
+  } */
 
   .formGroup {
     width: 300px;

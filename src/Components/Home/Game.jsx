@@ -128,7 +128,7 @@ const Game = () => {
     return (
         <div className='App'>
             <h1>GAME</h1>
-
+            {gameEnded && <h2 className='noti'>{gameStatus}</h2>}
             <div className='form'>
                 <div className='formGroup'>
                     <input
@@ -156,7 +156,6 @@ const Game = () => {
                     />
                 ))}
             </div>
-            {gameEnded && <h2 className='noti'>{gameStatus}</h2>}
         </div>
     )
 }
